@@ -1,0 +1,50 @@
+﻿@model CBR_Web.Models.Usercs;
+<div class="container">
+    <link rel="stylesheet" href="~/css/Estilo.css" type="text/css">
+    <header>
+        <div>
+            <img src="~/images/CBRLogo.png" width="150px" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home/Index">Inicio</a></li>
+                <li><a href="/home/Login">Login</a></li>
+                <li><a href="/home/Premium">Premium</a></li>
+
+    </header>
+    <form id="contact" method="post" asp-controller="Home" asp-action="Usuarionuevo">
+        <h1><center>CBR</center></h1>
+        <h3><center>Crear Usuario</center></h3>
+
+
+        <fieldset>
+            <input asp-for="Nombre" placeholder="Nombre" type="text" tabindex="1" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <input asp-for="Correo" placeholder="Correo Electronico " type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input asp-for="Clave" placeholder="Clave " type="password" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input asp-for="Reingresopassword" placeholder="Reingrese la Clave " type="password" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input asp-for="Lugarestudio" placeholder="Lugar de Estudio o Trabajo" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input asp-for="Fechanacimiento" placeholder="Fecha de Nacimiento" type="date" tabindex="2" required>
+        </fieldset>
+
+
+        <button name="submit" type="submit" id="login-submit" data-submit="...Sending" >
+            Submit
+            
+        </button>
+        </fieldset>
+        <h5>
+            <center>CBR Technologies</center>
+        </h5>
+    </form>
+</div>
