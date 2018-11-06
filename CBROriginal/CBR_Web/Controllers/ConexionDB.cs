@@ -25,31 +25,32 @@ namespace CBR_Web.Controllers
             }
         }
 
-        public Boolean Desconectar()
-        {
-            Boolean desconectar = false;
-            try
-            {
+        //public Boolean Desconectar()
+        //{
+        //    Boolean desconectar = false;
+        //    try
+        //    {
 
-                if (conexion.State.Equals(ConnectionState.Open))
-                {
-                    conexion.Close();
-                    desconectar = true;
-                }
-            }
-            catch (Exception)
-            {
-                desconectar = false;
+        //        if (conexion.State.Equals(ConnectionState.Open))
+        //        {
+        //            conexion.Close();
+        //            desconectar = true;
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        desconectar = false;
 
-            }
-            finally
-            {
-                conexion.Close();
-            }
-            return desconectar;
-        }
+        //    }
+        //    finally
+        //    {
+        //        conexion.Close();
+        //    }
+        //    return desconectar;
+        //}
 
-        public DataTable getDatosBD(String strSQL)
+
+        public DataTable getDatosBD(String strSQL, SqlParameterCollection ListaParametros)
         {
             DataTable dtDatos = new DataTable();
             try
@@ -59,12 +60,18 @@ namespace CBR_Web.Controllers
                 cmd.Connection = ObtenerConexion();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = strSQL;
+                if (ListaParametros != null)
+                {
+                    foreach (var item in ListaParametros)
+                    {
+                        cmd.Parameters.Add(item);
+                    }
+                }
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                 dataAdapter.Fill(dtDatos);
             }
             catch (Exception ex)
             {
-
 
 
             }
@@ -75,7 +82,7 @@ namespace CBR_Web.Controllers
             return dtDatos;
         }
 
-        public String setDatosBD(String strSQL)
+        public String setDatosBD(String strSQL, SqlParameterCollection ListaParametros)
         {
             String bandera = String.Empty;
             try
@@ -84,12 +91,19 @@ namespace CBR_Web.Controllers
                 SqlCommand cmd = conexion.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = strSQL;
+                if (ListaParametros != null)
+                {
+                    foreach (var item in ListaParametros)
+                    {
+                        cmd.Parameters.Add(item);
+                    }
+                }
                 cmd.ExecuteNonQuery();
                 bandera = "Proceso correcto";
             }
             catch (Exception ex)
             {
-                
+
             }
             finally
             {
@@ -97,6 +111,7 @@ namespace CBR_Web.Controllers
             }
             return bandera;
         }
+
 
     }
 }
