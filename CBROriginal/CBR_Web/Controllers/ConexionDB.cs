@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -68,7 +65,7 @@ namespace CBR_Web.Controllers
             catch (Exception ex)
             {
 
-                MessageBox.Show("Error al ejecutar sentencia: " + ex.Message);
+
 
             }
             finally
@@ -92,8 +89,7 @@ namespace CBR_Web.Controllers
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show("Error al ejecutar sentencia: " + ex.Message);
+                
             }
             finally
             {
