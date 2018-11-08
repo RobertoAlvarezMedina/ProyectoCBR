@@ -1,4 +1,14 @@
-﻿@model CBR_Web.Models.Usercs;
+﻿@model CBR_Web.Models.User;
+
+@{
+    bool resultado = false;
+    if (ViewBag.Resultado != null)
+    {
+        resultado = ViewBag.Resultado;
+    }
+
+    }
+
 <div class="container">
     <link rel="stylesheet" href="~/css/Estilo.css" type="text/css">
     <header>
@@ -12,6 +22,28 @@
                 <li><a href="/home/Premium">Premium</a></li>
 
     </header>
+
+    @if (ViewBag.Resultado != null)
+    {
+        @if (resultado)
+        {
+            <div class="alert alert-success alert-dismissible" style="margin-top: 30px;" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                @ViewBag.Mensaje
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger alert-dismissible" style="margin-top: 30px;" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                @ViewBag.Mensaje
+            </div>
+        }
+    }
+
+
+
+
     <form id="contact" method="post" asp-controller="Home" asp-action="Usuarionuevo">
         <h1><center>CBR</center></h1>
         <h3><center>Crear Usuario</center></h3>
@@ -35,12 +67,13 @@
         </fieldset>
         <fieldset>
             <input asp-for="Fechanacimiento" placeholder="Fecha de Nacimiento" type="date" tabindex="2" required>
+
         </fieldset>
 
 
-        <button name="submit" type="submit" id="login-submit" data-submit="...Sending" >
+        <button name="submit" type="submit" id="login-submit" data-submit="...Sending">
             Submit
-            
+
         </button>
         </fieldset>
         <h5>

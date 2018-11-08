@@ -69,12 +69,23 @@ namespace CBR_Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Usuarionuevo(Usercs user)
+        public IActionResult Usuarionuevo(User user)
         {
+            Utils.Utils utils = new Utils.Utils();
+            bool resultado = utils.IngresarUsuario(user);
+            ViewBag.Resultado = resultado;
+            if (resultado)
+            {
+                ViewBag.Mensaje = "El usuario" + user.Nombre + "ha sido ingresado satisfactoriamente.";
+            }
+            else
+            {
+                ViewBag.Mensaje = "El usuario"+ user.Nombre + "no fue ingresado correctamente,intente de nuevo!";
+            }
             return View("~/Views/Home/Login_Nuevo.cshtml");
         }
 
-        public IActionResult Usuarioexistente(Usercs user)
+        public IActionResult Usuarioexistente(User user)
         {
             return View("~/Views/Home/Login_Existente.cshtml");
         }
