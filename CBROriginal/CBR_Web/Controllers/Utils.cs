@@ -4,13 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using CBR_Web.Controllers;
+using System.Data;
 using CBR_Web.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CBR_Web.Utils
 {
     public class Utils
     {
         public SqlParameterCollection parameterCollection { get; set; }
+        public string CommandText { get; private set; }
+        public CommandType CommandType { get; private set; }
 
         public void LimpiarSqlParameterCollection()
         {
@@ -21,62 +25,95 @@ namespace CBR_Web.Utils
 
         ConexionDB connect = new ConexionDB();
 
-        public Boolean IngresarUsuario(User user)
-
+        public void InsertarUsuario(string nombre, string correo, string contrasena, string institucion, DateTime Fechanacimiento)
         {
-
-            ConexionDB conexion = new ConexionDB();
-            string strInsert = string.Empty;
-            try
+            using (var sqlConnection1 = new SqlConnection("Server=(cbrdatabase.database.windows.net)\\mssqllocaldb;Database=MyDB;Trusted_Connection=True;MultipleActiveResultSets=true")
+            )
             {
-                strInsert = "INSERT INTO dbo.cbr_Usuarios (Nombre, Correo,Contrasena,FechaNacimiento,Institucion) " +
-                            " VALUES (@Nombre, @Correo, @Contrasena,@FechaNacimiento, @Institucion)";
+                using (var cmd = new SqlCommand()
+                {
+                    CommandText = "INSERT INTO dbo.cbr_Usuario (Nombre,Correo,Contrasena,Institucion,FechaNacimiento)" +
+                                           "Values(@Nombre,@Correo,@Contrasena,@Institucion,@FechaNacimiento)",
+                    CommandType = CommandType.Text,
+                    Connection = sqlConnection1
+                })
+                {
+                    cmd.Parameters.Add("@Nombre", SqlDbType.Int).Value = nombre;
+                    cmd.Parameters.Add("@Correo", SqlDbType.Int).Value = correo;
+                    cmd.Parameters.Add("@Contrasena", SqlDbType.Int).Value = contrasena;
+                    cmd.Parameters.Add("@Institucion", SqlDbType.Int).Value = institucion;
+                    cmd.Parameters.Add("@FechaNacimiento", SqlDbType.Int).Value = Fechanacimiento;
+                    sqlConnection1.Open();
 
-                //LimpiarSqlParameterCollection();
-                parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Nombre", user.Nombre));
-                parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Correo", user.Correo));
-                parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Contrasena", user.Clave));
-                parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@FechaNacimiento", user.Fechanacimiento));
-                parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Institucion",user.Lugarestudio));
-
-
-
-                conexion.setDatosBD(strInsert,parameterCollection);
+                    //using (var reader = cmd.ExecuteReader())
+                    //{
+                    //    if (reader.Read())
+                    //    {
+                    //        var id = reader[0];
+                    //        var whatEver = reader[1];
+                    //        // get the rest of the columns you need the same way
+                    //    }
+                    //}
+                }
             }
-            catch (Exception ex)
-            {
-                return false;
-                
-            }
-
-
-            return true;
         }
 
-        public int GetUsuarioPorCorreoYContrasena(string correo, string contrasena)
+
+       public void SeleccionarUsuario(string correo,string contrasena)
         {
-            ConexionDB conexion = new ConexionDB();
-            int resultado = 0;
-            try
+            using (var sqlConnection1 = new SqlConnection("Server=(cbrdatabase.database.window.net)\\mssqllocaldb;Database=MyDB;Trusted_Connection=True;MultipleActiveResultSets=true")
+            )
             {
-                string strSelect = " SELECT  Correo,Contrasena FROM dbo.cbr_Usuarios WHERE Correo = @CORREO AND Contrasena = @Contrasena ";
+                using (var cmd = new SqlCommand()
+                {
+                    CommandText = "SELECT Correo,Contrasena FROM dbo.cbr_Usuario WHERE Correo = @Correo AND Contrasena = @Contrasena",
+                    CommandType = CommandType.Text,
+                    Connection = sqlConnection1
+                })
+                {
+                    cmd.Parameters.Add("@Correo", SqlDbType.Int).Value = correo;
+                    cmd.Parameters.Add("@Contrasena", SqlDbType.Int).Value = contrasena;
+                    sqlConnection1.Open();
 
-               //LimpiarSqlParameterCollection();
-               parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@CORREO", correo));
-               parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Contrasena", contrasena));
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            var id = reader[0];
+                            var lector = reader[1];
 
-                resultado = int.Parse(conexion.getDatosBD(strSelect,parameterCollection).Rows[0][0].ToString());
-
+                        }
+                    }
+                }
             }
-            catch (Exception)
-            {
-
-                throw;
-            }
+    }
 
 
-            return resultado;
-        }
+
+        //public int GetUsuarioPorCorreoYContrasena(string correo, string contrasena)
+        //{
+        //    ConexionDB conexion = new ConexionDB();
+        //    int resultado = 0;
+        //    try
+        //    {
+        //        string strSelect = " SELECT  Correo,Contrasena FROM dbo.cbr_Usuarios WHERE Correo = @CORREO AND Contrasena = @Contrasena ";
+
+        //       //LimpiarSqlParameterCollection();
+        //       parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@CORREO", correo));
+        //       parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Contrasena", contrasena));
+
+        //        resultado = int.Parse(conexion.getDatosBD(strSelect,parameterCollection).Rows[0][0].ToString());
+
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        throw;
+        //    }
+
+
+        //    return resultado;
+        //}
 
     }
 }
