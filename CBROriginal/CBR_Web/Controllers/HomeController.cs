@@ -72,7 +72,7 @@ namespace CBR_Web.Controllers
         public IActionResult Usuarionuevo(User user)
         {
             Utils.Utils utils = new Utils.Utils();
-            bool resultado = utils.IngresarUsuario(user);
+            bool resultado = utils.InsertarUsuario(user);
             ViewBag.Resultado = resultado;
             if (resultado)
             {

@@ -25,9 +25,9 @@ namespace CBR_Web.Utils
 
         ConexionDB connect = new ConexionDB();
 
-        public void InsertarUsuario(string nombre, string correo, string contrasena, string institucion, DateTime Fechanacimiento)
+        public Boolean InsertarUsuario(User user)
         {
-            using (var sqlConnection1 = new SqlConnection("Server=(cbrdatabase.database.windows.net)\\mssqllocaldb;Database=MyDB;Trusted_Connection=True;MultipleActiveResultSets=true")
+            using (var sqlConnection1 = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = CBR Technologies; Persist Security Info = False; User ID = Byron; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;")
             )
             {
                 using (var cmd = new SqlCommand()
@@ -38,11 +38,11 @@ namespace CBR_Web.Utils
                     Connection = sqlConnection1
                 })
                 {
-                    cmd.Parameters.Add("@Nombre", SqlDbType.Int).Value = nombre;
-                    cmd.Parameters.Add("@Correo", SqlDbType.Int).Value = correo;
-                    cmd.Parameters.Add("@Contrasena", SqlDbType.Int).Value = contrasena;
-                    cmd.Parameters.Add("@Institucion", SqlDbType.Int).Value = institucion;
-                    cmd.Parameters.Add("@FechaNacimiento", SqlDbType.Int).Value = Fechanacimiento;
+                    cmd.Parameters.Add("@Nombre", SqlDbType.Int).Value = user.Nombre;
+                    cmd.Parameters.Add("@Correo", SqlDbType.Int).Value = user.Correo;
+                    cmd.Parameters.Add("@Contrasena", SqlDbType.Int).Value = user.Clave;
+                    cmd.Parameters.Add("@Institucion", SqlDbType.Int).Value = user.Lugarestudio;
+                    cmd.Parameters.Add("@FechaNacimiento", SqlDbType.Int).Value = user.Fechanacimiento;
                     sqlConnection1.Open();
 
                     //using (var reader = cmd.ExecuteReader())
@@ -56,12 +56,13 @@ namespace CBR_Web.Utils
                     //}
                 }
             }
+            return false;
         }
 
 
        public void SeleccionarUsuario(string correo,string contrasena)
         {
-            using (var sqlConnection1 = new SqlConnection("Server=(cbrdatabase.database.window.net)\\mssqllocaldb;Database=MyDB;Trusted_Connection=True;MultipleActiveResultSets=true")
+            using (var sqlConnection1 = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = SERVICE_DESK; Persist Security Info = False; User ID = Byron; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;")
             )
             {
                 using (var cmd = new SqlCommand()
