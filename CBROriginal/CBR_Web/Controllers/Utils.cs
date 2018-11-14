@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using CBR_Web.Controllers;
+﻿using CBR_Web.Models;
+using System;
 using System.Data;
-using CBR_Web.Models;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using System.Data.SqlClient;
 
 namespace CBR_Web.Utils
 {
     public class Utils
     {
         public SqlParameterCollection parameterCollection { get; set; }
-        public string CommandText { get; private set; }
-        public CommandType CommandType { get; private set; }
 
         public void LimpiarSqlParameterCollection()
         {
@@ -23,11 +16,12 @@ namespace CBR_Web.Utils
 
 
 
-        ConexionDB connect = new ConexionDB();
+        Utils conexion = new Utils();
 
         public Boolean InsertarUsuario(User user)
         {
-            using (var sqlConnection1 = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = CBR Technologies; Persist Security Info = False; User ID = Byron; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;")
+            using (var sqlConnection1 = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = CBRDatabase; Persist Security Info = False; User ID = Byron ; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;")
+
             )
             {
                 using (var cmd = new SqlCommand()
@@ -44,23 +38,49 @@ namespace CBR_Web.Utils
                     cmd.Parameters.Add("@Institucion", SqlDbType.Int).Value = user.Lugarestudio;
                     cmd.Parameters.Add("@FechaNacimiento", SqlDbType.Int).Value = user.Fechanacimiento;
                     sqlConnection1.Open();
-
-                    //using (var reader = cmd.ExecuteReader())
-                    //{
-                    //    if (reader.Read())
-                    //    {
-                    //        var id = reader[0];
-                    //        var whatEver = reader[1];
-                    //        // get the rest of the columns you need the same way
-                    //    }
-                    //}
+                    conexion.setDatosBD(
+                        , parameterCollection);
                 }
             }
             return false;
         }
 
+        public String setDatosBD(String strSQL,SqlParameterCollection ListaParametros)
+        {
+            String bandera = String.Empty;
+            using (var sqlConnection1 = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = CBRDatabase; Persist Security Info = False; User ID = Byron ; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;")
 
-       public void SeleccionarUsuario(string correo,string contrasena)
+            )
+               
+                try
+                {
+                    sqlConnection1.Open();
+                    SqlCommand cmd = sqlConnection1.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = strSQL;
+                    if (ListaParametros != null)
+                    {
+                        foreach (var item in ListaParametros)
+                        {
+                            cmd.Parameters.Add(item);
+                        }
+                    }
+                    cmd.ExecuteNonQuery();
+                    bandera = "Proceso correcto";
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+                    sqlConnection1.Close();
+                }
+            return bandera;
+        }
+    
+
+        public void SeleccionarUsuario(string correo,string contrasena)
         {
             using (var sqlConnection1 = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = SERVICE_DESK; Persist Security Info = False; User ID = Byron; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;")
             )
@@ -89,32 +109,7 @@ namespace CBR_Web.Utils
             }
     }
 
-
-
-        //public int GetUsuarioPorCorreoYContrasena(string correo, string contrasena)
-        //{
-        //    ConexionDB conexion = new ConexionDB();
-        //    int resultado = 0;
-        //    try
-        //    {
-        //        string strSelect = " SELECT  Correo,Contrasena FROM dbo.cbr_Usuarios WHERE Correo = @CORREO AND Contrasena = @Contrasena ";
-
-        //       //LimpiarSqlParameterCollection();
-        //       parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@CORREO", correo));
-        //       parameterCollection.Add(new System.Data.SqlClient.SqlParameter("@Contrasena", contrasena));
-
-        //        resultado = int.Parse(conexion.getDatosBD(strSelect,parameterCollection).Rows[0][0].ToString());
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-
-
-        //    return resultado;
-        //}
+       
 
     }
 }
