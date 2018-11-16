@@ -1,4 +1,4 @@
-﻿@model CBR_Web.Models.Usercs;
+﻿@model CBR_Web.Models.User;
 <div class="container">
     <link rel="stylesheet" href="~/css/Estilo.css" type="text/css">
     <header>
@@ -10,13 +10,13 @@
                 <li><a href="/home/Index">Inicio</a></li>
                 <li><a href="/home/Login">Login</a></li>
                 <li><a href="/home/Premium">Premium</a></li>
+            </ul>
+        </nav>
 
     </header>
-    <form id="contact" method="post" asp-controller="Home">
-        <h1><center>CBR</center></h1>
-        <h3><center>Usuario Existente</center></h3>
-        
-
+    <form id="contact" method="post" asp-controller="Home" asp-action="Usuarioexistente">
+        <h1>CBR</h1>
+        <h3>Usuario Existente</h3>
 
         <fieldset>
             <input asp-for="Correo" placeholder="Correo Electronico " type="email" tabindex="2" required>
@@ -34,9 +34,8 @@
         <button name="facebook" type="#" id="contact-submit" data-submit="...Sending">
             Facebook
         </button>
-        </fieldset>
         <h5>
-            <center>CBR Technologies</center>
+            CBR Technologies
         </h5>
     </form>
 </div>

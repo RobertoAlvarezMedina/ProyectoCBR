@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CBR_Web.Models;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -6,112 +7,85 @@ namespace CBR_Web.Controllers
 {
     public class ConexionDB
     {
-        public SqlConnection conexion = new SqlConnection();
+        private const string ConnectionString = "Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = CBRDatabase; Persist Security Info = False; User ID = Byron ; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;";
 
-        public SqlConnection ObtenerConexion()
+        public Boolean InsertarUsuario(User user)
         {
-            conexion = new SqlConnection("Server = tcp:cbrdatabase.database.windows.net,1433; Initial Catalog = CBRDatabase; Persist Security Info = False; User ID = Byron; Password = miakhalifa69!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
-            //Server=tcp:cbrdatabase.database.windows.net,1433;Initial Catalog=AnalisisDataBase;Persist Security Info=False;User ID=Byron;Password=miakhalifa69;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
-
             try
             {
-                conexion.Open();
-                return conexion;
-            }
-            catch (Exception ex)
-            {
-                
-                throw;
-            }
-        }
-
-        //public Boolean Desconectar()
-        //{
-        //    Boolean desconectar = false;
-        //    try
-        //    {
-
-        //        if (conexion.State.Equals(ConnectionState.Open))
-        //        {
-        //            conexion.Close();
-        //            desconectar = true;
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        desconectar = false;
-
-        //    }
-        //    finally
-        //    {
-        //        conexion.Close();
-        //    }
-        //    return desconectar;
-        //}
-
-
-        public DataTable getDatosBD(String strSQL, SqlParameterCollection ListaParametros)
-        {
-            DataTable dtDatos = new DataTable();
-            try
-            {
-
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = ObtenerConexion();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = strSQL;
-                if (ListaParametros != null)
+                using (var sqlConnection1 = new SqlConnection(ConnectionString))
                 {
-                    foreach (var item in ListaParametros)
+                    using (var cmd = new SqlCommand()
                     {
-                        cmd.Parameters.Add(item);
+                        CommandText = "INSERT INTO cbrUsuarios ([Cedula],[Nombre],[Apellido],[Correo],[Contrasena],[ReingresoContrasena],[FechaNacimiento],[Institucion],[TemaInteres])VALUES " +
+                                      "(@Cedula,@Nombre,@Apellido,@Correo,@Contrasena,@ReingresoContrasena,@FechaNacimiento, @Institucion, @TemaInteres)",
+                        CommandType = CommandType.Text,
+                        Connection = sqlConnection1
+                    })
+                    {
+                        cmd.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = user.Nombre;
+                        cmd.Parameters.Add("@Correo", SqlDbType.VarChar).Value = user.Correo;
+                        cmd.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = user.Clave;
+                        cmd.Parameters.Add("@Institucion", SqlDbType.VarChar).Value = user.Lugarestudio;
+                        cmd.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = user.Fechanacimiento;
+                        cmd.Parameters.Add("@Cedula", SqlDbType.Int).Value = 0;
+                        cmd.Parameters.Add("@Apellido", SqlDbType.VarChar).Value = string.Empty;
+                        cmd.Parameters.Add("@ReingresoContrasena", SqlDbType.VarChar).Value = string.Empty;
+                        cmd.Parameters.Add("@TemaInteres", SqlDbType.VarChar).Value = string.Empty;
+                        sqlConnection1.Open();
+
+                        var reader = cmd.ExecuteReader();
+
+                        reader.Close();
                     }
                 }
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                dataAdapter.Fill(dtDatos);
+                return true;
             }
             catch (Exception ex)
             {
-
-
+                return false;
             }
-            finally
-            {
-                conexion.Close();
-            }
-            return dtDatos;
         }
 
-        public String setDatosBD(String strSQL,SqlParameterCollection ListaParametros)
+        public User SeleccionarUsuario(string correo, string contrasena)
         {
-            String bandera = String.Empty;
             try
             {
-                ObtenerConexion();
-                SqlCommand cmd = conexion.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = strSQL;
-                if (ListaParametros != null)
+                User usuarioEncontrado = null;
+                using (var sqlConnection1 = new SqlConnection(ConnectionString))
                 {
-                    foreach (var item in ListaParametros)
+                    using (var cmd = new SqlCommand()
                     {
-                        cmd.Parameters.Add(item);
+                        CommandText = "SELECT Nombre, Correo, FechaNacimiento, Institucion FROM cbrUsuarios WHERE Correo = @Correo AND Contrasena = @Contrasena",
+                        CommandType = CommandType.Text,
+                        Connection = sqlConnection1
+                    })
+                    {
+                        cmd.Parameters.Add("@Correo", SqlDbType.VarChar).Value = correo;
+                        cmd.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = contrasena;
+                        sqlConnection1.Open();
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                usuarioEncontrado = new User()
+                                {
+                                    Nombre = reader.GetString(0),
+                                    Correo = reader.GetString(1),
+                                    Fechanacimiento = reader.GetDateTime(2),
+                                    Lugarestudio = reader.GetString(3)
+                                };
+                            }
+                        }
                     }
                 }
-                cmd.ExecuteNonQuery();
-                bandera = "Proceso correcto";
+                return usuarioEncontrado;
             }
             catch (Exception ex)
             {
-
+                return null;
             }
-            finally
-            {
-                conexion.Close();
-            }
-            return bandera;
         }
-
-
     }
 }

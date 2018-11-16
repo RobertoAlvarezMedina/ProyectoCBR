@@ -71,22 +71,34 @@ namespace CBR_Web.Controllers
 
         public IActionResult Usuarionuevo(User user)
         {
-            Utils.Utils utils = new Utils.Utils();
-            bool resultado = utils.InsertarUsuario(user);
+            ConexionDB conexion = new ConexionDB();
+            bool resultado = conexion.InsertarUsuario(user);
             ViewBag.Resultado = resultado;
             if (resultado)
             {
-                ViewBag.Mensaje = "El usuario" + user.Nombre + "ha sido ingresado satisfactoriamente.";
+                ViewBag.Mensaje = "El usuario " + user.Nombre + " ha sido ingresado satisfactoriamente.";
             }
             else
             {
-                ViewBag.Mensaje = "El usuario"+ user.Nombre + "no fue ingresado correctamente,intente de nuevo!";
+                ViewBag.Mensaje = "El usuario " + user.Nombre + " no fue ingresado correctamente,intente de nuevo!";
             }
             return View("~/Views/Home/Login_Nuevo.cshtml");
         }
 
         public IActionResult Usuarioexistente(User user)
         {
+            ConexionDB conexion = new ConexionDB();
+            User usuario = conexion.SeleccionarUsuario(user.Correo, user.Clave);
+
+            if (usuario == null)
+            {
+                //Usuario no existe, credenciales invalidos
+            }
+            else
+            {
+                //Usuario Existe y credenciales son validos
+            }
+
             return View("~/Views/Home/Login_Existente.cshtml");
         }
 
