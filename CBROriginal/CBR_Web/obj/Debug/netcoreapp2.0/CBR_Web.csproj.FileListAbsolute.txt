@@ -1,44 +1,52 @@
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.deps.json
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.json
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.dev.json
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csprojResolveAssemblyReference.cache
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csproj.CoreCompileInputs.cache
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfoInputs.cache
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfo.cs
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\ulacit\Documents\Visual Studio 2017\Projects\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\ulacit\Desktop\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.deps.json
-C:\Users\ulacit\Desktop\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.json
-C:\Users\ulacit\Desktop\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.dev.json
-C:\Users\ulacit\Desktop\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\ulacit\Desktop\CBR\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\ulacit\Desktop\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csprojResolveAssemblyReference.cache
-C:\Users\ulacit\Desktop\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csproj.CoreCompileInputs.cache
-C:\Users\ulacit\Desktop\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfoInputs.cache
-C:\Users\ulacit\Desktop\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfo.cs
-C:\Users\ulacit\Desktop\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\ulacit\Desktop\CBR\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.deps.json
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.json
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.dev.json
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csprojAssemblyReference.cache
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csproj.CoreCompileInputs.cache
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfoInputs.cache
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfo.cs
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\Familia Alvarez\Desktop\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csprojAssemblyReference.cache
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csproj.CoreCompileInputs.cache
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfoInputs.cache
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfo.cs
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.deps.json
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.json
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.dev.json
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.dll
-C:\Users\Familia Alvarez\Source\Repos\RobertoAlvarezMedina\ProyectoCBR\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.pdb
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.deps.json
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.json
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.dev.json
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csprojResolveAssemblyReference.cache
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csproj.CoreCompileInputs.cache
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfoInputs.cache
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfo.cs
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/ulacit/Documents/Visual Studio 2017/Projects/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/ulacit/Desktop/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.deps.json
+C:/Users/ulacit/Desktop/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.json
+C:/Users/ulacit/Desktop/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.dev.json
+C:/Users/ulacit/Desktop/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/ulacit/Desktop/CBR/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/ulacit/Desktop/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csprojResolveAssemblyReference.cache
+C:/Users/ulacit/Desktop/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csproj.CoreCompileInputs.cache
+C:/Users/ulacit/Desktop/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfoInputs.cache
+C:/Users/ulacit/Desktop/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfo.cs
+C:/Users/ulacit/Desktop/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/ulacit/Desktop/CBR/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.deps.json
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.json
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.dev.json
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csprojAssemblyReference.cache
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csproj.CoreCompileInputs.cache
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfoInputs.cache
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfo.cs
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/Familia Alvarez/Desktop/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csprojAssemblyReference.cache
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csproj.CoreCompileInputs.cache
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfoInputs.cache
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfo.cs
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.pdb
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.deps.json
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.json
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.dev.json
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.dll
+C:/Users/Familia Alvarez/Source/Repos/RobertoAlvarezMedina/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.pdb
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.deps.json
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.json
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/bin/Debug/netcoreapp2.0/CBR_Web.runtimeconfig.dev.json
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csprojResolveAssemblyReference.cache
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.csproj.CoreCompileInputs.cache
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.AssemblyInfo.cs
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.dll
+/Users/carlos/Documents/GitHub/ProyectoCBR/CBROriginal/CBR_Web/obj/Debug/netcoreapp2.0/CBR_Web.pdb
