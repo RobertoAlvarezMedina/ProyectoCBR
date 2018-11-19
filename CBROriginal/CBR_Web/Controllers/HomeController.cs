@@ -64,6 +64,12 @@ namespace CBR_Web.Controllers
 
             return View();
         }
+		public IActionResult Examen()
+		{
+			ViewData["Message"] = "Your contact page.";
+
+			return View();
+		}
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
