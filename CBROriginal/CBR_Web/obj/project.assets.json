@@ -4831,11 +4831,10 @@
       ]
     },
     "Microsoft.AspNetCore.All/2.0.3": {
-      "sha512": "VGh1GCUPXgCGSBxJ05bvbMYLh8dOEB9rgwx5oD+2Pr5li+WGTEWg400xMV5p1pJvdfIYMDH3v4pD8xHFH6N0RQ==",
+      "sha512": "tS/REciEJ7MjT7SZhle8JrfZ28va/D9g0OXmDrNKP9Nr7j3kkyLH7w6kesgmj0q6HmcWR+ltZbd4kU2rBiQZdQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.all/2.0.3",
       "files": [
-        ".signature.p7s",
         "build/PublishWithAspNetCoreTargetManifest.targets",
         "build/aspnetcore-store-2.0.0-common.xml",
         "build/aspnetcore-store-2.0.0-linux-x64.xml",
@@ -5327,11 +5326,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc/2.0.1": {
-      "sha512": "32GM42G+oA32k004qwBHD5F9R2zvmr7XOBScJCFMnEH0drB/4wNmEqZCvfFAaC8Oxw7n/fwBTTtqfsbKzHOOTg==",
+      "sha512": "NyREVR8T77lyf5pn6FqMZky7qG/dLTbSas1EO3Cy+zLDsKhD6OrtgDJtzMDfRIfBysCoFo4bFcC38MTzKEdmtA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.xml",
         "microsoft.aspnetcore.mvc.2.0.1.nupkg.sha512",
@@ -5339,11 +5337,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.0.1": {
-      "sha512": "wUpg6qoOYIiEZiP7sSBkLEOolB5gi6tpda3rZfLoBrqEXMuIVM/dU6KbhKRyCHtI/mTWJHM8yTAl8EofxhaVHw==",
+      "sha512": "lmtZdHN/dHREWo9rGoxY646wUhdr1Wt9rXl8SYYPjA80VcGDKqgSwvb0SOt9f/7fYzOHPZGZuDPCf9lED2stsA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.abstractions/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.xml",
         "microsoft.aspnetcore.mvc.abstractions.2.0.1.nupkg.sha512",
@@ -5351,11 +5348,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.ApiExplorer/2.0.1": {
-      "sha512": "3R7ugB/6EyVQLPHS9v1UzBS+1vK+yQIOwHc6NwMBoeb2iLnA0wq9K34PoMmUrqc/h+XKT/KqUzbFX0xOxlNLdA==",
+      "sha512": "WaY906DkCyG7C/BZBLecVxNGTsXADxiv0cyaK9newWOGkIfQ0rp4UvLIijed8Tb2eJsfT99iLUBj5GvBWLxRwA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.apiexplorer/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ApiExplorer.xml",
         "microsoft.aspnetcore.mvc.apiexplorer.2.0.1.nupkg.sha512",
@@ -5363,11 +5359,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Core/2.0.1": {
-      "sha512": "LdmCE2sK4hhdbapIZlCBNP0Wj/0yIHTKurY+LGvrJaVmf5RzoDEKBwDMkMU/se6ipxS/oe8UR3r3orPqNxEWLQ==",
+      "sha512": "JFd2hCLx5wdbIVtURpGUq1dNcuhGW7RaoTwVghI5QxwZU3Dh65ymgdaoKVhB8OS20DhZaNwVPXYHfVlViMbnDw==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.core/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
         "microsoft.aspnetcore.mvc.core.2.0.1.nupkg.sha512",
@@ -5375,11 +5370,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Cors/2.0.1": {
-      "sha512": "Jvshx3Qv+CLxkbm5mOLFuXGyJ+k0pn/J/6STQSgTDZWjaYy7v+5sHneEstkZexHzoXu2t4jCk2qOnexM99L58w==",
+      "sha512": "eL/FDFflChBeKLiWCDj/Cui5LUpT7bDOmjcOh5zis6bVZUmX343jpuLebItWOkONTrodngeUToJ3xTVQhSDtVQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.cors/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Cors.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Cors.xml",
         "microsoft.aspnetcore.mvc.cors.2.0.1.nupkg.sha512",
@@ -5387,11 +5381,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.DataAnnotations/2.0.1": {
-      "sha512": "WdbkYTMHdQein/IPSt3dH21/KLWLnqhBJFiGTEiLoAsVnt8nF3gEEjNzVdhIWV5Dg8w0inSSrQ8X+pnd9N9hUA==",
+      "sha512": "7Dyl9bwmSbKkGGH9gS9u12xPmn8awkYhX8tDk2dSkSgza6gSm1cWjHG2BGIg4Lw6GD9MNr6xTTYfO1DJflPYYQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.dataannotations/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.xml",
         "microsoft.aspnetcore.mvc.dataannotations.2.0.1.nupkg.sha512",
@@ -5399,11 +5392,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Formatters.Json/2.0.1": {
-      "sha512": "RTY+O4Z6RdWGS07Od3ub4TYERy0Z9JkDmu7au8EuvsAlYyvJsD4riMg8uEsSPog9WomA8CYNihpbjewJGW8NzQ==",
+      "sha512": "OZDI91AhXZfpY9YqVMoklGdK20OfB5D7wZISv3LegLL6W6u81XMY6tOlfjkZaXVm/BSX8Cg7BzeFr37reyE6/w==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.formatters.json/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.xml",
         "microsoft.aspnetcore.mvc.formatters.json.2.0.1.nupkg.sha512",
@@ -5411,11 +5403,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Formatters.Xml/2.0.1": {
-      "sha512": "jkPm4cm8AROdBrX3coUj6jYapX4c17UE9grakummmjO9MFfA3trUBcCFY0u5lFo+chXjV2WxqAtfkKUUsiE+CQ==",
+      "sha512": "OoNOSIB0DEPcHtkQSg6X/p08RmFgT3VHwPtHewMa/HmVP1oPNdmLQCRz3hN5fsXGrOyO5WFa24DNDKyuvH41OA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.formatters.xml/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.xml",
         "microsoft.aspnetcore.mvc.formatters.xml.2.0.1.nupkg.sha512",
@@ -5423,11 +5414,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Localization/2.0.1": {
-      "sha512": "C3EdGcLCh5/XNQaVsmAmpvZ2fKmTwLFQXnhUTT1S7PbcQbqGTwD3/mU3535PErwdycQop0EIIQ39Rfrbvjl6xg==",
+      "sha512": "sZppxMkA1ARIUuCX3AYMslZsUScxHDNheVoVJtcW2E0HJfqAPNPg1BNTG2kH/OeDnQy/ldlHeOkFE645liDFVA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.localization/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Localization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Localization.xml",
         "microsoft.aspnetcore.mvc.localization.2.0.1.nupkg.sha512",
@@ -5435,11 +5425,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Razor/2.0.1": {
-      "sha512": "cdtEBkF2G3tHplOcAd5QnE3+Ra6tp2u3SNxLdy8TFwNhQ3Zhj8sVdOy+3OPRhCxq9VcjtMqmuQgJ2GhmbvCIcw==",
+      "sha512": "Z03KbgHYWaVd5+c/nO3ncPCSc165momK+xldJus15h+cJiVl5hzb5nFRNdA2vF4JjvcH3hW/DyC8oEtFofVAlw==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.razor/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.xml",
         "microsoft.aspnetcore.mvc.razor.2.0.1.nupkg.sha512",
@@ -5460,11 +5449,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation/2.0.1": {
-      "sha512": "sHIAdgUl17zLWjzNU/Q8OrIMKq5YA6BRVjl6DZTMvnQ4xheGmYYzje4fRe2t+SJXslpQXoOml0Kx/+aLp2QXqg==",
+      "sha512": "qrX7oypFE69MqlYQdFY8f5x2pTM+y0GZa1u/R7qdz/7C4qWqzPAG8Tsuy7CPFych8lbI8+rJx1fBfxrNr22oBA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.razor.viewcompilation/2.0.1",
       "files": [
-        ".signature.p7s",
         "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe",
         "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe",
         "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.Tasks.dll",
@@ -5475,11 +5463,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.RazorPages/2.0.1": {
-      "sha512": "HUvR32eRk27fvuAL6hdtQeVC8pfFT94qrqhNSmIjq9NQGi5sttmfbq3wrwHZadIQGtUMypLywnR3yy6envtuoA==",
+      "sha512": "lfRWvvJ63LdOPGt7wx+I9LvUr94ADoiJj8bMXdN3SNgYr+7yolsK6llqLG7UD9vFJC2/kSs/5uWUgGTI9JXxkA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.razorpages/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.RazorPages.xml",
         "microsoft.aspnetcore.mvc.razorpages.2.0.1.nupkg.sha512",
@@ -5487,11 +5474,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.TagHelpers/2.0.1": {
-      "sha512": "t9DYnh56iSwt+f4TxCWoHf7cdRzVAfQmowheEnoKCSScC6TRo8M6WRS4yeH+c2OwxyosKL4ohb3nzDGVgc/cjg==",
+      "sha512": "nuBEw70GCe9Lr8bGgWnsZhdmyI6awR6H6I8ECgYjXejcRlrBcgVEriRLtu1mrGHMkdW0wWh7z9CFePihUlSfOg==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.taghelpers/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.xml",
         "microsoft.aspnetcore.mvc.taghelpers.2.0.1.nupkg.sha512",
@@ -5499,11 +5485,10 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.0.1": {
-      "sha512": "udcUhokI8ZhWrVSAwifFA9vBSIxghIjIll4b8dj/4IeQS6ssqtiiB2MxcM/FiESxufk4nHbF6/x5PlMMDpw58w==",
+      "sha512": "8FDzO3Uur7cVlvazOauQJcnLnbShUEt1XRvWKKZJCttLf5xtoLNVJGIg4hjrxkwEGsCZdlf60gVT4ya1UN5Ibw==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc.viewfeatures/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.xml",
         "microsoft.aspnetcore.mvc.viewfeatures.2.0.1.nupkg.sha512",
@@ -5511,11 +5496,10 @@
       ]
     },
     "Microsoft.AspNetCore.NodeServices/2.0.1": {
-      "sha512": "gK09b4Bq0izwZZiBI5KKpHVowK74dvB+G2+PYUhEEmIJ8lYhHfRVQL1k9UfeGk5YQAXnuw4jmWpzkC5nac+ANw==",
+      "sha512": "nqQBEJ2N1CLNOi/cVZf2n535AbLLJhKTEi4u3Om12PQayoEzfcQIU2woLOI32QN93tL5B6HutaqEpx6T5t04Lw==",
       "type": "package",
       "path": "microsoft.aspnetcore.nodeservices/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.xml",
         "microsoft.aspnetcore.nodeservices.2.0.1.nupkg.sha512",
@@ -5725,11 +5709,10 @@
       ]
     },
     "Microsoft.AspNetCore.SpaServices/2.0.1": {
-      "sha512": "i/K6U+oR8F7Nut58thbR0pzf2VcQ4nhf7vKSsRFtKC+hrEPPmUl3CM28pmwmHDsp3nmQYT1A9DHlMjamydmq/w==",
+      "sha512": "xEqorDmOsi7XXDRMR0d301t1byXTha1V8nl60o4VanqUhrtIi/6ZoHpJhOPqvmGlMZu6UTia0LPDQH4DFcoP3A==",
       "type": "package",
       "path": "microsoft.aspnetcore.spaservices/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.SpaServices.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.SpaServices.xml",
         "microsoft.aspnetcore.spaservices.2.0.1.nupkg.sha512",
@@ -6622,7 +6605,7 @@
       ]
     },
     "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-      "sha512": "UMlN++q5qqzQ2HH+uOrKxN5fmBXMQDhrYkSaPJxhmyzfJaFPirrVr1raim/Ocq1psAZoB9+7JSAf0GDAX35wUg==",
+      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
       "type": "package",
       "path": "microsoft.extensions.platformabstractions/1.1.0",
       "files": [
@@ -12551,24 +12534,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\byron\\.nuget\\packages\\": {},
+    "C:\\Users\\ulacit\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\byron\\source\\repos\\ProyectoCBR2\\CBROriginal\\CBR_Web\\CBR_Web.csproj",
+      "projectUniqueName": "C:\\Users\\ulacit\\Desktop\\ProyectoCBR-master\\CBROriginal\\CBR_Web\\CBR_Web.csproj",
       "projectName": "CBR_Web",
-      "projectPath": "C:\\Users\\byron\\source\\repos\\ProyectoCBR2\\CBROriginal\\CBR_Web\\CBR_Web.csproj",
-      "packagesPath": "C:\\Users\\byron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\byron\\source\\repos\\ProyectoCBR2\\CBROriginal\\CBR_Web\\obj\\",
+      "projectPath": "C:\\Users\\ulacit\\Desktop\\ProyectoCBR-master\\CBROriginal\\CBR_Web\\CBR_Web.csproj",
+      "packagesPath": "C:\\Users\\ulacit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ulacit\\Desktop\\ProyectoCBR-master\\CBROriginal\\CBR_Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\byron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ulacit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
