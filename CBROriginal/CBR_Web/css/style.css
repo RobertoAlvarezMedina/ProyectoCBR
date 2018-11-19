@@ -1,4 +1,8 @@
-﻿.scp-quizzes-main {
+﻿body{
+
+
+
+.scp-quizzes-main {
     width: 100%;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
@@ -53,4 +57,5 @@ input[type=radio] {
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
 }
