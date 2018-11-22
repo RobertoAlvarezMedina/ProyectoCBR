@@ -4,19 +4,19 @@
 }
 
 body {
-    background: #E0ECF8;
+    background: #D3D3D3;
 }
 
 header, main, footer {
-    background: #E0ECF8;
+    background: #F5FFFA;
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
 }
 
     header nav {
-        background: #0B4C5F;
-        overflow: hidden;
+        background: #F5FFFA;
+        overflow: visible;
     }
 
         header nav ul {
@@ -30,12 +30,12 @@ header, main, footer {
                 header nav ul li a {
                     padding: 10px 20px;
                     display: block;
-                    color: #E0ECF8;
+                    color: #F5FFFA;
                     text-decoration: none;
                 }
 
                     header nav ul li a:hover {
-                        background: #E0ECF8;
+                        background: #00FA9A;
                     }
 
 .articles {
@@ -46,20 +46,20 @@ header, main, footer {
 
     .articles article {
         padding: 20px;
-        background: #E0ECF8;
+        background: #00FA9A;
         margin-bottom: 20px;
     }
 
 aside {
     width: 30%;
-    background: #E0ECF8;
+    background: #00FA9A;
     float: left;
     padding: 20px;
-    box-sizing: border_box;
+    box-sizing: border-box;
 }
 
 footer {
-    background: #0B4C5F;
-    color: #E0ECF8;
+    background: #F5FFFA;
+    color: #00FA9A;
     clear: both
 }
