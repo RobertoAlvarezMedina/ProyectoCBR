@@ -36,6 +36,11 @@ namespace CBR_Web.Controllers
         }
         public IActionResult Login_Nuevo()
         {
+            if (TempData["AlertMessage"] != null)
+            {
+                ViewBag.Resultado = TempData["AlertMessage"];
+            }
+
             ViewData["Message"] = "Your contact page.";
 
             return View();
@@ -98,7 +103,11 @@ namespace CBR_Web.Controllers
 
             if (usuario == null)
             {
-                //Usuario no existe, credenciales invalidos
+                string message = "Hola";
+                TempData["AlertMessage"] = message;
+
+                return RedirectToAction("Login_Nuevo");
+                //Usuario no existe, credenciales invalidos + variable ------ vista
             }
             else
             {
