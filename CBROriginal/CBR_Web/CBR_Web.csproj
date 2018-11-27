@@ -58,7 +58,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Home\VerExamen.cshtml">
+    <Content Update="Views\Home\Eleccion.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

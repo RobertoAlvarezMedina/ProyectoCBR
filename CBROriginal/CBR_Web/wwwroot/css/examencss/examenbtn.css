@@ -16,7 +16,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        background-color: #00FA9A;
+        background-color: #ffffff;
+        opacity: .4;
         color: white;
         font-size: 16px;
         padding: 12px 24px;
