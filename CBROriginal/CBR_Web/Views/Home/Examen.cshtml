@@ -1,68 +1,34 @@
 ﻿
+<!DOCTYPE html>
 <html>
 <head>
-    <title>C Programming Language Output this code Quizzes 1</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/slick/slick.css">
-    <link rel="stylesheet" href="~/css/slick/slick-theme.css">
-    <link rel="stylesheet" href="~/css/animate.css">
-    <link rel="stylesheet" href="~/css/iconfont.css">
-    <link rel="stylesheet" href="~/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/css/bootstrap.css">
-    <link rel="stylesheet" href="~/css/magnific-popup.css">
-    <link rel="stylesheet" href="~/css/bootsnav.css">
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/responsive.css" />
-    <script src="~/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-
-    <script src="http://www.fastlearning.in/controller/js/jquery-1.9.1.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('label').click(function () {
-                $('label').removeClass('worngans');
-                $(this).addClass('worngans');
-            });
-        });
-    </script>
-
-
+    <title>Kevin's Kwiz!</title>
+    <link href="~/css/examencss/styleexamen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="~/css/examencss/examenjs.js"></script>
 </head>
+
 <body>
-    <div class="scp-quizzes-main">
-        <div class="scp-quizzes-data">
-            <h3>1. ¿Para  qué  se  utiliza  el  Modelo  RACI?</h3>
-            <pre>	
+    <h1>This is best quiz on the internet!</h1>
 
-</pre>
-            <br />
-            <input type="radio" id="Fastlearning" name="question1">
-            <label for="Fastlearning">1.Documentar  las  funciones  y  responsabilidades  de  los  interesados  en  un  proceso  o  actividad</label><br />
-            <input type="radio" name="question1">
-            <label>2.Definir requerimientos para un nuevo servicio o proceso</label><br />
-            <input type="radio" name="question1">
-            <label>3.Analizar el impacto de un incidente en el negocio</label> <br />
-            <input type="radio" name="question1">
-            <label>4.Crear un balanced scorecard que muestra el estado global de la gestión de servicios</label>
-        </div>
-        <div class="scp-quizzes-data">
-            <h3>2. ¿De cuáles procesos se podría considerar información de entrada para la gestión de niveles de servicio cuando se está negociando un acuerdo de niveles de servicio (SLA)?</h3>
-            <pre>
-</pre>
-            <br />
-            <input type="radio" name="question2">
-            <label>1.De todos los demás procesos de ITIL</label><br />
-            <input type="radio" name="question2">
-            <label>2. Solamente de la gestión de disponibilidad y de la gestión de la capacidad</label><br />
-            <input type="radio" name="question2" id="inculdefile">
-            <label for="inculdefile">3. Solamente de la gestión de incidencias y de la gestión de problemas</label> <br />
-            <input type="radio" name="question2">
-            <label>4. Solamente de la gestión de cambios y de la gestión de versiones y despliegues</label>
-        </div>
+    <form id="quiz" name="quiz">
+
+        <p class="questions">What is the capital of Rhode Island?</p>
+        <input id="textbox" type="text" name="question1">
+        <p class="questions">What is the capital of Connecticut?</p>
+        <input type="radio" id="mc" name="question2" value="Hartford"> Hartford<br>
+        <input type="radio" id="mc" name="question2" value="Heartford"> Heartford<br>
+        <p class="questions">What is the capital of New York?</p>
+        <input type="radio" id="mc" name="question3" value="Albany"> Albany<br>
+        <input type="radio" id="mc" name="question3" value="All Benny's"> All Benny's<br>
+
+        <input id="button" type="button" value="I'm finished!" onclick="check();">
+
+    </form>
+    <div id="after_submit">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <img id="picture">
     </div>
-
-
-</body>
 </html>
+</body>
