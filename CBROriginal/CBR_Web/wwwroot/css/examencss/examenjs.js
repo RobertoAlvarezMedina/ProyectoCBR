@@ -3,16 +3,21 @@
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
+    var question4 = document.quiz.question4.value;
     var correct = 0;
 
 
-    if (question1 == "Providence") {
+    if (question1 == "Information Technology Infrastructure Library") {
         correct++;
     }
-    if (question2 == "Hartford") {
+    if (question2 == "Documentar  las  funciones  y  responsabilidades  de  los  interesados  en  un  proceso  o  actividad") {
         correct++;
     }
     if (question3 == "Albany") {
+        correct++;
+    }
+
+    if (question4 == "Albany") {
         correct++;
     }
 

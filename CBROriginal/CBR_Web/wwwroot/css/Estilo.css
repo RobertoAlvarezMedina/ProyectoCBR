@@ -14,12 +14,12 @@
 }
 
 header nav {
-    background: #00FA9A;
+    background: #FFFAFA;
     overflow: hidden;
 }
 
     header nav ul {
-        background: #00FA9A;
+        background: #FFFAFA;
         width: 90%;
         max-width: 1000px;
         margin: 20px auto;
@@ -32,12 +32,12 @@ header nav {
             header nav ul li a {
                 padding: 10px 20px;
                 display: block;
-                color: #00FA9A;
+                color: #FFFAFA;
                 text-decoration: none;
             }
 
                 header nav ul li a:hover {
-                    background: #00FA9A;
+                    background: #FFFAFA;
                 }
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -45,7 +45,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: #000;
-    background: #00FA9A;
+    background: #FFFAFA;
 }
 
 .container {
@@ -65,14 +65,14 @@ body {
     margin: 50px 0;
 }
     #contact h1 {
-        color: #00FA9A;
+        color: #000000;
         display: block;
         font-size: 30px;
         font-weight: 400;
         font: Impact;
     }
     #contact h3 {
-        color: #00FA9A;
+        color: #000000;
         display: block;
         font-size: 30px;
         font-weight: 400;

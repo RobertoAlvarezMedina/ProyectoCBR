@@ -66,7 +66,6 @@ C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\bin\Debug\netcoreap
 C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.runtimeconfig.dev.json
 C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.dll
 C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\bin\Debug\netcoreapp2.0\CBR_Web.pdb
-C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csprojAssemblyReference.cache
 C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.csproj.CoreCompileInputs.cache
 C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfoInputs.cache
 C:\Users\byron\Source\Repos\ProyectoCBR2\CBROriginal\CBR_Web\obj\Debug\netcoreapp2.0\CBR_Web.AssemblyInfo.cs
