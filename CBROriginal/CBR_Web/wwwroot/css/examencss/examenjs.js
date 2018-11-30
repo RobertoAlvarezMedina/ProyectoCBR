@@ -10,7 +10,7 @@
     if (question1 == "Information Technology Infrastructure Library") {
         correct++;
     }
-    if (question2 == "Documentar  las  funciones  y  responsabilidades  de  los  interesados  en  un  proceso  o  actividad") {
+    if (question2 == "Hartford") {
         correct++;
     }
     if (question3 == "Albany") {
