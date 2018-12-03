@@ -14,12 +14,12 @@
 }
 
 header nav {
-    background: #FFFAFA;
+    background: #000;
     overflow: hidden;
 }
 
     header nav ul {
-        background: #FFFAFA;
+        background: #000;
         width: 90%;
         max-width: 1000px;
         margin: 20px auto;
@@ -45,7 +45,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: #000;
-    background: #FFFAFA;
+    background: #888;
 }
 
 .container {
@@ -65,7 +65,7 @@ body {
     margin: 50px 0;
 }
     #contact h1 {
-        color: #000000;
+        color: #000;
         display: block;
         font-size: 30px;
         font-weight: 400;
