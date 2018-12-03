@@ -57,10 +57,4 @@
     <None Include="wwwroot\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Update="Views\Home\Eleccion.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
-  </ItemGroup>
-
 </Project>
