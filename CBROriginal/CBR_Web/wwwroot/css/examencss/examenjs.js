@@ -24,34 +24,34 @@ var all_questions = [{
         wrong: ["Si, el proveedor del servicio debería asegurarse que todos las peticiones para nuevos servicios sean cumplidas", "Si - si el cliente es externo ya que está pagando por el servicio", "No - si el cliente es interno ya que no siempre paga por el servicio"]
     }
 }, {
-    question_string: "Which of the following elements aren’t introduced in HTML5?",
+        question_string: "¿Cuál proceso es primordialmente responsable de empaquetar, construir, probar y desplegar servicios?",
     choices: {
-        correct: "<input>",
-        wrong: ["<article>", "<footer>", "<hgroup>"]
+        correct: "Gestión de versiones y despliegues",
+        wrong: ["Planeamiento y soporte de la transición", "Gestión de configuración y activos del servicio", "Gestión del catálogo de servicios"]
     }
 }, {
-    question_string: "How many wheels are there on a tricycle?",
+        question_string: "¿Cuál de los siguientes títulos NO es una etapa del ciclo de vida del servicio?",
     choices: {
-        correct: "Three",
-        wrong: ["One", "Two", "Four"]
+        correct: "Optimización del servicio",
+        wrong: ["Trnasición del servicio", "Diseño del servicio", "Estrategia del servicio"]
     }
 },{
-    question_string: "How many wheels are there on a tricycle?",
+        question_string: "¿Qué significa “Garantía de un servicio”?",
     choices: {
-        correct: "Three",
-        wrong: ["One", "Two", "Four"]
+        correct: "A los clientes se les aseguran ciertos niveles de disponibilidad, capacidad, continuidad y seguridad",
+        wrong: ["Todos los problemas relacionados con el servicio se solucionan gratuitamente durante un período determinado de tiempo", "No habrá fallas en las aplicaciones ni en la infraestructura asociada al servicio", "El servicio se ajusta al propósito"]
     }
 },{
-    question_string: "How many wheels are there on a tricycle?",
+        question_string: "¿Cuál de las siguientes declaraciones acerca de la creación de valor a través de los servicios es CORRECTA?",
     choices: {
-        correct: "Three",
-        wrong: ["One", "Two", "Four"]
+        correct: "La percepción que el cliente tiene acerca del servicio es un factor importante en la creación de valor",
+        wrong: ["El valor de un servicio únicamente puede medirse en términos financieros.", "Entregar los resultados de un proveedor de servicios es importante en el valor de un servicio", "Las preferencias del proveedor de servicios determinan la percepción del valor de un servicio"]
     }
 }, {
-    question_string: 'Who is the main character of Harry Potter?',
+        question_string: "¿Cuál de las siguientes afirmaciones acerca de los clientes internos y externos es la correcta?",
     choices: {
-        correct: "Harry Potter",
-        wrong: ["Hermione Granger", "Ron Weasley", "Voldemort"]
+        correct: "Clientes internos y externos deben recibir el nivel de servicio al cliente que se ha acordado",
+        wrong: ["Los clientes externos deben recibir un mejor servicio al cliente, ya que pagan por los servicios de TI", "Los clientes internos deben recibir un mejor servicio al cliente debido a que pagan los salarios de los empleados", "El mejor servicio al cliente debe darse al cliente que paga más dinero"]
     }
 }];
 
@@ -244,7 +244,7 @@ Question.prototype.render = function (container) {
     });
 }
 $(document).ready(function () {
-    var quiz = new Quiz('My Quiz');
+    var quiz = new Quiz('ITIL Quiz');
 
     for (var i = 0; i < all_questions.length; i++) {
         var question = new Question(all_questions[i].question_string, all_questions[i].choices.correct, all_questions[i].choices.wrong);
