@@ -1,63 +1,34 @@
-﻿
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>ITIL QUIZ</title>
-    
-    <link href="~/css/examencss/styleexamen.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="~/css/examencss/examenjs.js"></script>
+    <meta charset="UTF-8">
+    <title>Multiple Choice Quiz</title>
+
+
+
+    <link rel="stylesheet" href="~/css/examencss/styleexamen.css">
 
 </head>
-
 <body>
+    <div id="quiz">
+        <h1 id="quiz-name"></h1>
+        <button id="submit-button">Submit Answers</button>
+        <button id="next-question-button">Next Question</button>
+        <button id="prev-question-button">Previous</button>
 
-    <header>
-        <div>
-            <img src="~/images/CBRLogobig.png" alt="">
+        <div id="quiz-results">
+
+            <p id="quiz-results-message"></p>
+            <p id="quiz-results-score"></p>
+            <button id="quiz-retry-button">Retry</button>
+
         </div>
-        <nav>
-            <ul>
-                <li><a href="/home/Index">Inicio</a></li>
-                <li><a href="/home/Premium">Premium</a></li>
-                <li><a href="/home/Contact">Contacto</a></li>
-
-
-            </ul>
-        </nav>
-
-
-    </header>
-    <h1>ITIL</h1>
-
-    <form id="quiz" name="quiz">
-
-
-        <p class="questions">1.¿Para  qué  se  utiliza  el  Modelo  RACI?</p>
-        <input type="radio" id="mc" name="question2" value="Hartford">Documentar  las  funciones  y  responsabilidades  de  los  interesados  en  un  proceso  o  actividad<br>
-        <input type="radio" id="mc" name="question2" value="opcion2">Definir requerimientos para un nuevo servicio o proceso<br>
-        <input type="radio" id="mc" name="question2" value="opcion3"> Analizar el impacto de un incidente en el negocio<br>
-        <input type="radio" id="mc" name="question2" value="opcion4"> Crear un balanced scorecard que muestra el estado global de la gestión de servicios<br>
-        <br /><br />
-        <p class="questions">2.¿De cuáles procesos se podría considerar información de entrada para la gestión de niveles de servicio cuando se está negociando un acuerdo de niveles de servicio (SLA)?</p>
-        <input type="radio" id="mc" name="question3" value="Albany"> De todos los demás procesos de ITIL<br>
-        <input type="radio" id="mc" name="question3" value="opcion2"> Solamente de la gestión de disponibilidad y de la gestión de la capacidad<br>
-        <input type="radio" id="mc" name="question3" value="opcion3"> Solamente de la gestión de incidencias y de la gestión de problemas<br>
-        <input type="radio" id="mc" name="question3" value="opcion4"> Solamente de la gestión de cambios y de la gestión de versiones y despliegues<br>
-        <br /><br />
-
-        <input id="button" type="button" value="I'm finished!" onclick="check();">
-
-    </form>
-    <div id="after_submit">
-        <p id="number_correct"></p>
-        <p id="message"></p>
-        <img id="picture">
     </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-
-
+    <script src="~/css/examencss/examenjs.js"></script>
 
 
 </body>
 </html>
+
