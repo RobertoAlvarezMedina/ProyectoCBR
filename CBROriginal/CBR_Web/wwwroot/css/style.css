@@ -1,32 +1,4 @@
 
-
-/*
-Author: Bootstrap Themes
-Author URI: http://bootstrapthemes.co
-*/
-
-/*==========================================
- 01.  PREDIFINEED (FROM 1 TO 780 )
- 02.  PRELOADER - LINE NO 786
- 03.  NAVIGATION - LINE NO 930
- 04.  HOME - LINE NO 1150
- 05.  THU FEATURE - LINE NO 1280
- 06.  THU FLIDE - LINE NO 1355
- 07.  THU SERVICE - LINE NO 1385
- 08.  PORTFOLIO - LINE NO 1444
- 09.  THU SOLUTION - LINE NO 1620
- 10.  THU TEAM - LINE NO 1658
- 11.  THU CLIENTS FEEDBACK - LINE NO 1730
- 12. THU BLOG - LINE NO 1848
- 13. THU SUBCRIBS - LINE NO 1935
- 14. FOOTER - LINE NO 2020
-==========================================*/
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-html,
 body {
     font-size: 14px;
     color: #797979;
@@ -38,7 +10,7 @@ body {
     width:100%;
     font-family: 'Raleway', sans-serif;
 }
-a:link, a:visited {
+/*a:link, a:visited {
     background-color: #4682B4;
     color: white;
     padding: 14px 25px;
@@ -50,10 +22,11 @@ a:link, a:visited {
 
 a:hover, a:active {
     background-color: green;
-}
-/*------------------------------------------------------------------*/
-/*   IE10 in Windows 8 and Windows Phone 8 Bug fix
-/*-----------------------------------------------------------------*/
+}*/
+
+
+
+
 
 @-webkit-viewport { width: device-width; }
 @-moz-viewport { width: device-width; }
@@ -61,23 +34,11 @@ a:hover, a:active {
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
-/*
-    Page Content
-------------------------------------------*/
 
 .page-content, 
 section { overflow: hidden; }
 
-/*
-    On Scroll Animations 
-------------------------------------------*/
 
-/*.animated { visibility: hidden; }
-.visible { visibility: visible; }*/
-
-/*
-    Spacing & Alignment 
-------------------------------------------*/
 
 .roomy-100 {
     padding-top: 100px;
@@ -110,7 +71,7 @@ section { overflow: hidden; }
 }
 
 
-/*text color*/
+
 
 .text-muted{}
 .text-primary{color: #00a885 !important;;}
@@ -124,7 +85,7 @@ section { overflow: hidden; }
     cursor: not-allowed;
 }
 
-/*bacground color*/
+
 .lightbg {
     background-color: #f2f2f2;
 }
@@ -170,7 +131,7 @@ a {
 *:before,
 *:after {
     box-sizing: border-box;
-    /*    direction: rtl;*/
+    
 }
 
 p {
@@ -276,7 +237,7 @@ p {
 p:last-child {
     margin-bottom: 0px;
 }
-/*colors*/
+
 .w100 {
     font-weight: 100;
 }
@@ -310,9 +271,7 @@ p:last-child {
 }
 
 
-/*
-Section
-*/
+
 
 .parallax-section {
     max-width: 100%;
@@ -325,7 +284,6 @@ ul{
     list-style:none;
 }
 
-/*all overlay*/
 
 .overlay {
     background-color: rgba(41, 39, 34, 0.50);
@@ -355,9 +313,7 @@ ul{
 }
 
 
-/*
-Separator
-*/
+
 .separator_left{
     width:85px;
     height:2px;
@@ -377,9 +333,7 @@ Separator
     background: #00a885;
 }
 
-/*
-Button
-*/
+
 .btn{
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
@@ -413,13 +367,104 @@ Button
     border-color: #00a885;
 }
 
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #90EE90;
+    color: #000;
+}
 
-/*
-socail icon
---------------------------------*/
-/*
-Extra height css
-*/
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #00FA9A;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+    #contact h1 {
+        color: #000;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+        font: Impact;
+    }
+
+    #contact h3 {
+        color: #000;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #contact h4 {
+        margin: 5px 0 15px;
+        display: block;
+        font-size: 13px;
+    }
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+    #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid #AAA;
+    }
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #00FA9A;
+    color: #000;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+    #contact button[type="submit"]:hover {
+        background: #00FA9A;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+#contact input:focus, #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+
+
 .m-0{
     margin:0 !important;
 }
@@ -624,7 +669,6 @@ p-0{
     padding-right: 5.714rem;
 }
 
-/*padding*/
 .padding-twenty {
     padding: 10px 0;
 }
@@ -638,7 +682,6 @@ p-0{
     padding: 40px 0;
 }
 
-/*border*/
 .no-border-top{
     border-top:0px solid transparent !important;
 }
@@ -646,7 +689,6 @@ p-0{
     border-right:0px solid transparent !important;
 }
 
-/*for placeholder changes*/
 
 input[type="email"].form-control::-webkit-input-placeholder {
     color: #797979;
@@ -681,7 +723,6 @@ textarea::-ms-input-placeholder{
 .fix{
     overflow: hidden;
 }
-/*heading title all area*/
 .head_title{
     padding-bottom: 2.143rem;
     overflow: hidden;
@@ -696,11 +737,6 @@ textarea::-ms-input-placeholder{
     color:#999999;
 }
 
-/*End off pridifain css*/
-
-
-
-/*Preloader*/
 #loading{
     background-color: #00a885;
     height: 100%;
@@ -839,12 +875,6 @@ textarea::-ms-input-placeholder{
         -webkit-transform: translate(0,0) rotate(-180deg);
     }
 }
-/*End off Preloader*/
-
-
-/*
-Nav Menu style
-==================*/
 
 .navbar-brand {
     padding: 25px 15px;
@@ -876,10 +906,6 @@ Nav Menu style
     color:#fff;
 }
 
-
-/*
-Home Section style
-==================*/
 
 .home{
     background: url(../images/home-bg.jpg) no-repeat scroll  center center;
@@ -955,9 +981,6 @@ Home Section style
 }
 
 
-/*
-Featured section style
-========================*/
 
 .features_item .f_item_icon{
     float: left;
@@ -977,7 +1000,6 @@ Featured section style
     font-size:14px;
 }
 
-/*Business Section*/
 .main_business{}
 .business_item{}
 .business_item h2{
@@ -1047,10 +1069,6 @@ Featured section style
 }
 .business_slid .nextprevleft:hover,
 .business_slid .nextprevright:hover{
-    /*    width:25px;
-        height: 25px;
-        line-height: 25px;*/
-    /*text-align: center;*/
     background-color: #ddd;
     border-radius: 50%;
 }
@@ -1065,26 +1083,6 @@ Featured section style
     list-style: none;
     text-align: left;
 }
-
-
-
-/*
-work Section style
-=====================*/
-
-/*.slides{
-    width:100%;
-    height: auto;
-}*/
-/*#owl-demo .item{
-    width:350px;
-    height:350px;
-}
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: 300px;
-}*/
 
 
 
@@ -1154,8 +1152,6 @@ work Section style
 
 
 
-/*Test Section
-======================*/
 .main_test{
     width: 100%;
     display: block;
@@ -1201,24 +1197,20 @@ work Section style
     box-shadow: 1px 0px 0px 0px #ddd;
 }
 
-/*Brand Section
-=========================*/
 .brand_item img{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: all 0.6s;
     height: 30px;
 }
 .brand_item img:hover{
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
 
 
 
 
-/*call to action
-=========================*/
 
 .action_btn .btn-default:hover{
     background-color: #fff;
@@ -1246,7 +1238,6 @@ work Section style
 
 
 
-/*Footer section*/
 .divider{
     width:100%;
     height: 1px;

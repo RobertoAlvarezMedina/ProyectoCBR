@@ -1,5 +1,4 @@
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);*/
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@
 }
 
 header nav {
-    background: #B0C4DE;
+    background: #FFFFFF;
     overflow: hidden;
 }
 
@@ -26,7 +25,7 @@ header nav {
 
         header nav ul li {
             float: left;
-            color: #00FA9A;
+            color: #00FF7F;
         }
 
             header nav ul li a {
@@ -46,7 +45,7 @@ body {
     font-size: 13px;
     line-height: 40px;
     color: #000;
-    background: #4682B4;
+    background: #FFFFFF;
 }
 
 .container {
@@ -54,7 +53,7 @@ body {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background: #90EE90;
+    background: #FFFFFF;
     color: #000;
 }
 
@@ -63,7 +62,7 @@ body {
 }
 
 #contact {
-    background: #00FA9A;
+    background: #00CED1;
     padding: 25px;
     margin: 50px 0;
 }
@@ -120,11 +119,11 @@ fieldset {
 
 #contact button[type="submit"] {
     cursor: pointer;
-    width: 100%;
+    width: 30%;
     border: none;
-    background: #00FA9A;
+    background: #FFFAFA;
     color: #000;
-    margin: 0 0 5px;
+    margin: 4 0 5px;
     padding: 10px;
     font-size: 15px;
 }
@@ -161,16 +160,4 @@ fieldset {
     color: #888;
 }
 
-a:link, a:visited {
-    background-color: #4682B4;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
 
-
-a:hover, a:active {
-    background-color: green;
-}
