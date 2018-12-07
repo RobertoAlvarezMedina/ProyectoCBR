@@ -160,3 +160,17 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
+
+a:link, a:visited {
+    background-color: #4682B4;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: green;
+}
