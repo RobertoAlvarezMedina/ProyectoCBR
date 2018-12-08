@@ -16,8 +16,8 @@
 
     </header>
     <form id="contact" method="post" asp-controller="Home" asp-action="Usuarioexistente">
-        <h1>CBR</h1>
-        <h3>Usuario Existente</h3>
+
+        <h3>Por Favor ingrese sus datos</h3>
 
         <fieldset>
             <input asp-for="Correo" placeholder="Correo Electronico " type="email" tabindex="2" required>
@@ -25,11 +25,8 @@
         <fieldset>
             <input asp-for="Clave" placeholder="Clave " type="password" tabindex="2" required>
         </fieldset>
-
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
-            Submit
-        </button>
-       
+        <br />
+        <a href="/home/MenuUser" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Ingresar</a>
         <h5>
             CBR Technologies
         </h5>
