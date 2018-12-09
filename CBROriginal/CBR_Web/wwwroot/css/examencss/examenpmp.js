@@ -244,7 +244,7 @@ Question.prototype.render = function (container) {
     });
 }
 $(document).ready(function () {
-    var quiz = new Quiz('ITIL Quiz');
+    var quiz = new Quiz('PMP Quiz');
 
     for (var i = 0; i < all_questions.length; i++) {
         var question = new Question(all_questions[i].question_string, all_questions[i].choices.correct, all_questions[i].choices.wrong);
