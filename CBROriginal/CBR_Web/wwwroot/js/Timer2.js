@@ -1,4 +1,4 @@
-﻿var time_in_minutes = 30;
+﻿var time_in_minutes = 20;
 var current_time = Date.parse(new Date());
 var deadline = new Date(current_time + time_in_minutes * 60 * 1000);
 
@@ -18,7 +18,7 @@ function run_clock(id, endtime) {
         clock.innerHTML = 'Minutos restantes: ' + t.minutes + '<br>Segundos restantes: ' + t.seconds;
         if (t.total <= 0) { clearInterval(timeinterval); }
     }
-    update_clock(); 
+    update_clock();
     var timeinterval = setInterval(update_clock, 1000);
 }
 run_clock('clockdiv', deadline);
