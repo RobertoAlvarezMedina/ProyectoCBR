@@ -136,20 +136,17 @@ Quiz.prototype.render = function (container) {
 
         }
 
-
-
-       
         var percentage = score / self.questions.length;
         console.log(percentage);
         var message;
         if (percentage === 1) {
-            message = 'Great job!'
+            message = '¡Muy Bien!'
         } else if (percentage >= .75) {
-            message = 'You did alright.'
+            message = '¡Te falto poco, sigue así!'
         } else if (percentage >= .5) {
-            message = 'Better luck next time.'
+            message = 'Mas suerte la proxima'
         } else {
-            message = 'Maybe you should try a little harder.'
+            message = 'Tal vez deberías estudiar un poco más ;)'
         }
         $('#quiz-results-message').text(message);
         $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');

@@ -1,57 +1,86 @@
 ﻿
 var all_questions = [{
-    question_string: "¿Para  qué  se  utiliza  el  Modelo  RACI?",
+    question_string: "La causa más común de conflictos en proyectos es:",
     choices: {
-        correct: "Documentar  las  funciones  y  responsabilidades  de  los  interesados  en  un  proceso  o  actividad",
-        wrong: ["Definir requerimientos para un nuevo servicio o proceso", "Analizar el impacto de un incidente en el negocio", "Crear un balanced scorecard que muestra el estado global de la gestión de servicios"]
+        correct: "Cronograma",
+        wrong: ["Opiniones técnicas", "Discusiones personales", "Prioridades del proyecto"]
     }
-}, {
-        question_string: "¿De cuáles procesos se podría considerar información de entrada para la gestión de niveles de servicio cuando se está negociando un acuerdo de niveles de servicio (SLA)?",
+},
+    {
+        question_string: "¿Cuál es un proceso del área de conocimiento de la administración del alcance? ",
     choices: {
-        correct: "De todos los demás procesos de ITIL",
-        wrong: ["Solamente de la gestión de disponibilidad y de la gestión de la capacidad", "Solamente de la gestión de incidencias y de la gestión de problemas", "Solamente de la gestión de cambios y de la gestión de versiones y despliegues"]
+        correct: "Identificar alcance",
+        wrong: ["Clarificar alcance", "Controlar alcance", "Cerrar alcance"]
     }
-}, {
-        question_string: "¿Cuál de los siguientes mantiene relaciones entre todos los componentes del servicio?",
+ },
+    {
+        question_string: "¿Cuál de los procesos identifica el administrador del proyecto?",
     choices: {
-        correct: "El sistema de gestión de la configuración",
-        wrong: ["El plan de la capacidad", "La biblioteca definitiva de medios", "Un acuerdo de nivel de servicio"]
+        correct: "Desarrollar el acta constitutiva",
+        wrong: ["Desarrollar el plan del proyecto", "Definir el alcance", "Seleccionar el proceso del proyecto"]
     }
-},{
-        question_string: "¿Una petición de un cliente SIEMPRE debería ser cumplida?",
+ },
+    {
+        question_string: "¿Cuál de los siguientes procesos produce una salida de la EDT?",
     choices: {
-        correct: "No, es responsabilidad del proveedor TI de llevar a cabo las debidas diligencias antes que la petición sea cumplida",
-        wrong: ["Si, el proveedor del servicio debería asegurarse que todos las peticiones para nuevos servicios sean cumplidas", "Si - si el cliente es externo ya que está pagando por el servicio", "No - si el cliente es interno ya que no siempre paga por el servicio"]
+        correct: "Crear la EDT",
+        wrong: ["Definir actividades", "Inicio del proyecto", "Plan del alcance"]
     }
-}, {
-        question_string: "¿Cuál proceso es primordialmente responsable de empaquetar, construir, probar y desplegar servicios?",
+ },
+    {
+        question_string: "¿Cuál de las siguientes teorías fue sugerida por Deming?",
     choices: {
-        correct: "Gestión de versiones y despliegues",
-        wrong: ["Planeamiento y soporte de la transición", "Gestión de configuración y activos del servicio", "Gestión del catálogo de servicios"]
+        correct: "Planear - Hacer - Verificar - Actuar para mejorar la calidad",
+        wrong: ["Aplicar pequeñas mejoras continuas para reducir costo y asegurar consistencia", "Análisis marginal", "Teoría de la expectativa - las personas esperan ser remuneradas por su esfuerzo"]
     }
-}, {
-        question_string: "¿Cuál de los siguientes títulos NO es una etapa del ciclo de vida del servicio?",
+    },
+    {
+        question_string: "Usted es el administrador de proyecto de una empresa de manufactura de autos. Como parte del control de calidad usted decide verificar sólo el 5% de los autos generados por el verificador ambiental. ¿Cuál técnica usaría?",
     choices: {
-        correct: "Optimización del servicio",
-        wrong: ["Trnasición del servicio", "Diseño del servicio", "Estrategia del servicio"]
+        correct: "Muestreo estadístico",
+        wrong: ["Diagrama de pareto", "Cuadros de control", "Selección de muestra"]
     }
-},{
-        question_string: "¿Qué significa “Garantía de un servicio”?",
+    },
+    {
+        question_string: "Ejecutar el proceso de Aseguramiento de la calidad es parte de la siguiente fase:",
+        choices: {
+            correct: "Ejecución",
+            wrong: ["Planeación", "Control", "Cierre"]
+        }
+    },
+    {
+        question_string: "¿Cuál de las siguientes no es una herramienta de ejecutar el proceso control de calidad? ",
+        choices: {
+            correct: "Evaluación comparativa",
+            wrong: ["Diagramas de flujo", "Histograma", "Inspección"]
+        }
+    },
+    {
+        question_string: "¿Cuál de las siguientes salidas pertenece al proceso de Identificar el riesgo?",
+        choices: {
+            correct: "Registro de riesgos",
+            wrong: ["Lecciones aprendidas", "Listas de verificación", "Análisis SWOT"]
+        }
+    }, 
+    {
+        question_string: "¿En cuál del proceso del área de conocimiento de administración del riesgo son valores númericos asignados a las probabilidades e impacto de los riesgos?",
+        choices: {
+            correct: "Ejecutar el análisis cuantitativo de los riesgos",
+            wrong: ["Ejecutar el análisis cualitativo de los riesgos", "Ejecutar análisis númerico de los riesgos", "Plan de respuesta al riesgo"]
+        }
+    },
+    {
+        question_string: "¿Cuál de las siguientes sentencias es verdadera acerca de los riesgos?",
+        choices: {
+            correct: "La identificación de riesgos sucede durante todo el proyecto",
+            wrong: ["Si un riesgo es identificado en un Plan de respuesta al riesgo, entonces significa que el riesgo ya ha ocurrido.", "Una vez que un riesgo ha ocurrido, usted consulta en Plan de administración de riesgos para determinar qué acción fue tomada.", "Un riesgo que no fue planeado pero sucedió, es llamado por un disparador."]
+        }
+    },
+    {
+        question_string: "Si usted está administrando el proyecto de planeación de la fiesta de empleados de la compañía. Existe el riesgo de que los empleados podrían no llegar a la fiesta. Usted decide no tomar ninguna acción debido a que esta posibilidad es baja. ¿Cuál estrategia de respuesta al riesgo usted siguió?",
     choices: {
-        correct: "A los clientes se les aseguran ciertos niveles de disponibilidad, capacidad, continuidad y seguridad",
-        wrong: ["Todos los problemas relacionados con el servicio se solucionan gratuitamente durante un período determinado de tiempo", "No habrá fallas en las aplicaciones ni en la infraestructura asociada al servicio", "El servicio se ajusta al propósito"]
-    }
-},{
-        question_string: "¿Cuál de las siguientes declaraciones acerca de la creación de valor a través de los servicios es CORRECTA?",
-    choices: {
-        correct: "La percepción que el cliente tiene acerca del servicio es un factor importante en la creación de valor",
-        wrong: ["El valor de un servicio únicamente puede medirse en términos financieros.", "Entregar los resultados de un proveedor de servicios es importante en el valor de un servicio", "Las preferencias del proveedor de servicios determinan la percepción del valor de un servicio"]
-    }
-}, {
-        question_string: "¿Cuál de las siguientes afirmaciones acerca de los clientes internos y externos es la correcta?",
-    choices: {
-        correct: "Clientes internos y externos deben recibir el nivel de servicio al cliente que se ha acordado",
-        wrong: ["Los clientes externos deben recibir un mejor servicio al cliente, ya que pagan por los servicios de TI", "Los clientes internos deben recibir un mejor servicio al cliente debido a que pagan los salarios de los empleados", "El mejor servicio al cliente debe darse al cliente que paga más dinero"]
+        correct: "Aceptación",
+        wrong: ["Prevención", "Mitigación", "Transferencia"]
     }
 }];
 
@@ -143,13 +172,13 @@ Quiz.prototype.render = function (container) {
         console.log(percentage);
         var message;
         if (percentage === 1) {
-            message = 'Great job!'
+            message = '¡Muy Bien!'
         } else if (percentage >= .75) {
-            message = 'You did alright.'
+            message = '¡Te falto poco, sigue así!'
         } else if (percentage >= .5) {
-            message = 'Better luck next time.'
+            message = 'Mas suerte la proxima'
         } else {
-            message = 'Maybe you should try a little harder.'
+            message = 'Tal vez deberías estudiar un poco más ;)'
         }
         $('#quiz-results-message').text(message);
         $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
