@@ -33,25 +33,14 @@ body {
     width: device-width;
 }
 
-/*
-    Page Content
-------------------------------------------*/
+
 
 .page-content,
 section {
     overflow: hidden;
 }
 
-/*
-    On Scroll Animations 
-------------------------------------------*/
 
-/*.animated { visibility: hidden; }
-.visible { visibility: visible; }*/
-
-/*
-    Spacing & Alignment 
-------------------------------------------*/
 
 .roomy-100 {
     padding-top: 100px;

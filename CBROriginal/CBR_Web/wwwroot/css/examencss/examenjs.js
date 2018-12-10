@@ -47,6 +47,12 @@ var all_questions = [{
         correct: "La percepción que el cliente tiene acerca del servicio es un factor importante en la creación de valor",
         wrong: ["El valor de un servicio únicamente puede medirse en términos financieros.", "Entregar los resultados de un proveedor de servicios es importante en el valor de un servicio", "Las preferencias del proveedor de servicios determinan la percepción del valor de un servicio"]
     }
+},{
+        question_string: "El nombre completo de ITIL es: Information Technology Infrastructure Library",
+    choices: {
+        correct: "Si",
+        wrong: ["No"]
+    }
 }, {
         question_string: "¿Cuál de las siguientes afirmaciones acerca de los clientes internos y externos es la correcta?",
     choices: {
